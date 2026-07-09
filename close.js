@@ -1,22 +1,22 @@
-  <script>
+<script>
     document.addEventListener('DOMContentLoaded', function() {
       // Inisialisasi jawaban
       const answers = { '1': null, '2': null, '3': null, '4': null, '5': null };
 
       // Definisi tipe kepribadian
       const personalities = {
-        'A': { name: 'AKAN DIPENJARA', count: 0, color: '#e74c3c' },
-        'B': { name: 'DIPOLISIKAN', count: 0, color: '#f39c12' },
-        'C': { name: 'DITUNTUT', count: 0, color: '#3498db' },
-        'D': { name: 'DIJADIKAN TERSANGKA', count: 0, color: '#9b59b6' }
+        'A': { name: 'DITAHAN', count: 0, color: '#000000' },
+        'B': { name: 'DILAPORKAN', count: 0, color: '#E44A99' },
+        'C': { name: 'DIJADIKAN TERSANGKA', count: 0, color: '#01AA13' },
+        'D': { name: 'DIJERAT PASAL', count: 0, color: '#0F0E83' }
       };
 
       // Deskripsi hasil
       const descriptions = {
-        'A': 'Kamu adalah critical thinker yang berani menyuarakan kebenaran dengan data. Hati-hati, keberanianmu bisa membuatmu target penindasan.',
-        'B': 'Kamu seorang aktivis dunia maya. Like dan repost-mu menyebarkan informasi dengan cepat, sehingga aparat bisa merasa terganggu.',
-        'C': 'Kamu dituntut karena menyebarkan informasi yang dianggap menghasut. Padahal kritik adalah bagian dari demokrasi!',
-        'D': 'Kamu aktivis sejati yang turun ke jalan dan mendokumentasikan perlawanan. Aksi langsungmu membuatmu target aparat.'
+        'A': 'Seperti admin akun media sosial Khariq Anwar @aliansimahasiswapenggugat serta admin akun @bekasi_menggugat, anda kemungkinan akan ditangkap setelah menyuarakan dukungan terhadap aksi demonstrasi demonstrasi Agustus 2025 di media sosial dengan jeratan pasal Undang-undang tentang Informasi dan Transaksi Elektronik (ITE), Pasal 160, dan Pasal 161 Ayat 1 KUHP.',
+        'B': '⁠Apa yang kamu lakukan dapat menyebabkan kamu dilaporkan ke pihak berwajib seperti halnya akun X dari @hourly_absurd_2, @lantip, @mbakdeden dan @txtdrjkt serta akun Facebook dari Gosip Artis Indonesia yang hanya membuat dan membagikan ulang meme Bahlil Lahadalia (Menteri Energi dan Sumber Daya Mineral).',
+        'C': 'Gerakanmu mungkin akan bernasib sama seperti akun TikTok @cecepmunich dan @TMG yang dijadikan tersangka karena diduga menyebarkan konten yang mengajak masyarakat untuk ikut serta dalam aksi. Mereka dijadikan tersangka dengan pasal 161 ayat 1 KUHP dengan ancaman pidana paling lama 4 tahun dan diwajibkan melapor 2 kali dalam sepekan.',
+        'D': 'Seperti Syahdan selaku admin @gejayanmemanggil dan Laras Faizati Khairunisa yang sangat vokal dan aktif dalam menyebarkan ajakan aksi, kamu kemungkinan akan dijerat dengan Pasal 160 KUHP, pasal 45A ayat 3 juncto, Pasal 28 ayat 3 UU ITE, dan atau Pasal 76H juncto, Pasal 15 juncto, Pasal 87 UU Perlindungan Anak, Pasal 48 ayat 1 Jo, Pasal 32 ayat 1, Undang-undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik (ITE), Pasal 45A ayat 2 Jo, Pasal 28 ayat 2 UU Nomor 1 Tahun 2024 tentang ITE, Pasal 160 KUHP dan Pasal 161 ayat 1 KUHP.'
       };
 
       // Elemen DOM
@@ -75,7 +75,7 @@
         });
 
         personalityResult.textContent = personalities[dominant].name;
-        personalityResult.style.background = `linear-gradient(to right, ${personalities[dominant].color}, #fdbb2d)`;
+        personalityResult.style.background = personalities[dominant].color;
         personalityDesc.textContent = descriptions[dominant];
         resultContainer.style.display = 'block';
       }
