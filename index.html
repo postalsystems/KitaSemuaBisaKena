@@ -6,25 +6,25 @@
   <title>Aku, Kamu, Kita Semua, Bisa Kena</title>
   <style>
     * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif; }
-    body { background:#ffffff; color:#333; min-height:100vh; padding:20px; }
+    body { background:#f96baf; color:#333; min-height:100vh; padding:20px; }
     .container { max-width:800px; margin:0 auto; background-color:rgba(255,255,255,0.95); border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.3); overflow:hidden; }
-    header { background:linear-gradient(to right,#2c3e50,#4a6491); color:white; padding:25px; text-align:center; }
+    header { background:#192d86; color:white; padding:25px; text-align:center; }
     h1 { font-size:2.2rem; margin-bottom:10px; }
     .subtitle { font-size:1.1rem; opacity:0.9; }
     .game-container { padding:25px; }
     .question-container { margin-bottom:30px; display:none; }
     .question-container.active { display:block; animation:fadeIn 0.5s ease; }
-    .question-text { font-size:1.3rem; margin-bottom:20px; color:#2c3e50; line-height:1.5; }
+    .question-text { font-size:1.3rem; margin-bottom:20px; color:#000000; line-height:1.5; }
     .options { display:flex; flex-direction:column; gap:15px; }
     .option { background:#f8f9fa; border:2px solid #e9ecef; border-radius:10px; padding:15px; cursor:pointer; transition:all 0.3s ease; }
     .option:hover { background:#e9ecef; transform:translateY(-3px); box-shadow:0 5px 15px rgba(0,0,0,0.1); }
-    .option.selected { background:#4a6491; color:white; border-color:#2c3e50; }
+    .option.selected { background:#192d86; color:white; border-color:#000000; }
     .navigation { display:flex; justify-content:space-between; margin-top:30px; }
-    button { padding:12px 25px; border:none; border-radius:8px; background:linear-gradient(to right,#2c3e50,#4a6491); color:white; font-size:1rem; cursor:pointer; transition:all 0.3s ease; }
+    button { padding:12px 25px; border:none; border-radius:8px; background:#192d86; color:white; font-size:1rem; cursor:pointer; transition:all 0.3s ease; }
     button:hover { transform:translateY(-3px); box-shadow:0 5px 15px rgba(0,0,0,0.2); }
     button:disabled { background:#bdc3c7; cursor:not-allowed; }
     .result-container { display:none; padding:25px; text-align:center; }
-    .result-title { font-size:2rem; margin-bottom:20px; color:#2c3e50; }
+    .result-title { font-size:2rem; margin-bottom:20px; background:#000000; }
     .personality-result { font-size:1.8rem; font-weight:bold; margin:20px 0; padding:15px; border-radius:10px; background:linear-gradient(to right,#b21f1f,#fdbb2d); color:white; }
     .percentage-bars { margin:30px 0; }
     .percentage-bar { margin-bottom:15px; text-align:left; }
