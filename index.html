@@ -38,7 +38,7 @@
     .progress-container { margin:20px 0; }
     .progress-bar { height:10px; background:#ffffff; border-radius:5px; overflow:hidden; }
     .progress-fill { height:100%; background:#f96baf; width:0%; transition:width 0.5s ease; }
-    .progress-text { text-align:center; margin-top:5px; font-size:0.9rem; color:#ff7100; }
+    .progress-text { text-align:center; margin-top:5px; font-size:0.9rem; color:#192d86; }
     .disclaimer { margin-top:30px; font-size:0.8rem; color:#f96baf; text-align:center; padding:10px; background:#f8f9fa; border-radius:5px; }
     .footer { margin-top:15px; font-size:0.8rem; color:#2c3e50; text-align:center; }
   </style>
@@ -141,15 +141,15 @@
           </div>
           <div class="percentage-bar">
             <div class="bar-label"><span>Dilaporkan</span><span id="percent-B">0%</span></div>
-            <div class="bar-container"><div class="bar-fill" id="bar-B" style="width:0%; background-color:#E44A99;"></div></div>
+            <div class="bar-container"><div class="bar-fill" id="bar-B" style="width:0%; background-color:#F96BAF;"></div></div>
           </div>
           <div class="percentage-bar">
             <div class="bar-label"><span>Dijadikan Tersangka</span><span id="percent-C">0%</span></div>
-            <div class="bar-container"><div class="bar-fill" id="bar-C" style="width:0%; background-color:#01AA13;"></div></div>
+            <div class="bar-container"><div class="bar-fill" id="bar-C" style="width:0%; background-color:#FF7100;"></div></div>
           </div>
           <div class="percentage-bar">
             <div class="bar-label"><span>Dijerat Pasal</span><span id="percent-D">0%</span></div>
-            <div class="bar-container"><div class="bar-fill" id="bar-D" style="width:0%; background-color:#0F0E83;"></div></div>
+            <div class="bar-container"><div class="bar-fill" id="bar-D" style="width:0%; background-color:#192D86;"></div></div>
           </div>
         </div>
         <div class="personality-desc" id="personality-desc"></div>
@@ -171,9 +171,9 @@
       // Definisi tipe kepribadian
       const personalities = {
         'A': { name: 'DITAHAN', count: 0, color: '#000000' },
-        'B': { name: 'DILAPORKAN', count: 0, color: '#E44A99' },
-        'C': { name: 'DIJADIKAN TERSANGKA', count: 0, color: '#01AA13' },
-        'D': { name: 'DIJERAT PASAL', count: 0, color: '#0F0E83' }
+        'B': { name: 'DILAPORKAN', count: 0, color: '#F96BAF' },
+        'C': { name: 'DIJADIKAN TERSANGKA', count: 0, color: '#FF7100' },
+        'D': { name: 'DIJERAT PASAL', count: 0, color: '#192D86' }
       };
 
       // Deskripsi hasil
